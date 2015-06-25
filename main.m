@@ -2,8 +2,7 @@
 //  main.m
 //  OverlayViewTester
 //
-//  Created by Jason Job on 09-12-10.
-//  Copyright Jason Job 2009. All rights reserved.
+//  Created by TOTEM
 //
 
 #import <UIKit/UIKit.h>

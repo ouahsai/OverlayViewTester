@@ -26,6 +26,7 @@
 - (void)dealloc {
 	[overlayViewController release];
     [window release];
+    [window release];
     [super dealloc];
 }
 

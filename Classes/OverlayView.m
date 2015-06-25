@@ -2,8 +2,7 @@
 //  OverlayView.m
 //  OverlayViewTester
 //
-//  Created by Jason Job on 09-12-10.
-//  Copyright 2009 Jason Job. All rights reserved.
+//  Created by TOTEM
 //
 
 #import "OverlayView.h"
@@ -20,7 +19,7 @@
 		self.backgroundColor = [UIColor clearColor];
 		
 		// Load the image to show in the overlay:
-		UIImage *overlayGraphic = [UIImage imageNamed:@"overlaygraphic.png"];
+		UIImage *overlayGraphic = [UIImage imageNamed:@"Totem.png"];
 		UIImageView *overlayGraphicView = [[UIImageView alloc] initWithImage:overlayGraphic];
 		overlayGraphicView.frame = CGRectMake(30, 100, 260, 200);
 		[self addSubview:overlayGraphicView];

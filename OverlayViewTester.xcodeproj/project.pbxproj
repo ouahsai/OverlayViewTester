@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		960512DE10D1786500A1A352 /* ScanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 960512DD10D1786500A1A352 /* ScanButton.m */; };
 		960512E010D17AF700A1A352 /* scanbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 960512DF10D17AF700A1A352 /* scanbutton.png */; };
 		96347881113464BD00BEFE8A /* OverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96347880113464BD00BEFE8A /* OverlayViewController.xib */; };
+		B30AAEC41B3C2E60005173A5 /* Totem.png in Resources */ = {isa = PBXBuildFile; fileRef = B30AAEC31B3C2E60005173A5 /* Totem.png */; };
+		B30AAEC61B3C3030005173A5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B30AAEC51B3C3030005173A5 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		960512DD10D1786500A1A352 /* ScanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanButton.m; sourceTree = "<group>"; };
 		960512DF10D17AF700A1A352 /* scanbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanbutton.png; sourceTree = "<group>"; };
 		96347880113464BD00BEFE8A /* OverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayViewController.xib; sourceTree = "<group>"; };
+		B30AAEC31B3C2E60005173A5 /* Totem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Totem.png; path = ../Documents/Totem.png; sourceTree = "<group>"; };
+		B30AAEC51B3C3030005173A5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B30AAEC51B3C3030005173A5 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				960512DF10D17AF700A1A352 /* scanbutton.png */,
+				B30AAEC31B3C2E60005173A5 /* Totem.png */,
 				96048C9310D166E00094B2AC /* overlaygraphic.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* OverlayViewTester-Info.plist */,
@@ -148,8 +154,16 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 49MAJJR7Y6;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OverlayViewTester" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -169,10 +183,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30AAEC41B3C2E60005173A5 /* Totem.png in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				96048C9410D166E00094B2AC /* overlaygraphic.png in Resources */,
 				960512E010D17AF700A1A352 /* scanbutton.png in Resources */,
 				96347881113464BD00BEFE8A /* OverlayViewController.xib in Resources */,
+				B30AAEC61B3C3030005173A5 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,15 +214,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OverlayViewTester_Prefix.pch;
 				INFOPLIST_FILE = "OverlayViewTester-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = OverlayViewTester;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -214,25 +231,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OverlayViewTester_Prefix.pch;
 				INFOPLIST_FILE = "OverlayViewTester-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = OverlayViewTester;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -241,7 +259,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

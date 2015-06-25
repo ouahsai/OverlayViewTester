@@ -2,8 +2,7 @@
 //  OverlayViewController.m
 //  OverlayViewTester
 //
-//  Created by Jason Job on 09-12-10.
-//  Copyright 2009 Jason Job. All rights reserved.
+//  Created by TOTEM
 //
 
 #import "OverlayViewController.h"
@@ -27,15 +26,17 @@
 	picker.navigationBarHidden = YES;
 	
 	// Make camera view full screen:
-	picker.wantsFullScreenLayout = YES;
-	picker.cameraViewTransform = CGAffineTransformScale(picker.cameraViewTransform, CAMERA_TRANSFORM_X, CAMERA_TRANSFORM_Y);
+	//picker.wantsFullScreenLayout = YES;
+    picker.extendedLayoutIncludesOpaqueBars = YES;
+    picker.cameraViewTransform = CGAffineTransformScale(picker.cameraViewTransform, CAMERA_TRANSFORM_X, CAMERA_TRANSFORM_Y);
 	
 	// Insert the overlay:
 	picker.cameraOverlayView = overlay;
 	
 	// Show the picker:
-	[self presentModalViewController:picker animated:YES];	
-	[picker release];
+	//[self presentModalViewController:picker animated:YES];
+    [self presentViewController:picker animated:YES completion:NULL];
+    [picker release];
 	
     [super viewDidAppear:YES];
 }
